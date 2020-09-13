@@ -1,0 +1,17 @@
+.form-control.collection {
+  height: auto;
+  padding: 3px;
+  width: 30px;
+  text-align: center;
+  font-size: 10px;
+  display: inline-block;
+}
+.form-control.collection:not([value="0"]) {
+  background-color: rgba(0, 0, 0, .1);
+}
+[data-incollection="false"] {
+  opacity: .5;
+}
+[data-only-show-cards-in-collection="true"] [data-is-in-collection="false"] {
+  display: none;
+}
